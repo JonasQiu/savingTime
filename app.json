@@ -11,7 +11,9 @@
     "navigationBarTextStyle": "white"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "return": "/pages/components/return/return",
+    "page-load": "/pages/components/pageLoad/pageLoad"
   },
   "sitemapLocation": "sitemap.json"
 }
