@@ -1,0 +1,32 @@
+<!-- 模块展示内容 -->
+<homePage wx:if="{{PageCur==='homePage'}}"></homePage>
+<my wx:if="{{PageCur==='my'}}"></my>
+<active wx:if="{{PageCur==='active'}}"></active>
+<search wx:if="{{PageCur==='search'}}"></search>
+
+<!-- 底部导航 -->
+<view class=" shadow foot cu-bar tabbar bg-white">
+  <view class="action {{PageCur==='homePage'?'text-green add-action':'text-gray'}} " bindtap="NavChange"
+    data-cur="homePage">
+    <view class="{{PageCur==='homePage'?'cu-btn f-45 cuIcon-add bg-green shadow':''}}">
+      <text class="cuIcon-homefill"></text>
+    </view>首页
+  </view>
+  <view class="action {{PageCur==='search'?'text-green add-action':'text-gray'}}" bindtap="NavChange"
+    data-cur="search">
+    <view class="{{PageCur==='search'?'cu-btn f-45 cuIcon-add bg-green shadow':''}}">
+      <text class="cuIcon-search"></text>
+    </view>搜寻
+  </view>
+  <view class="action {{PageCur==='active'?'text-green add-action':'text-gray'}}" bindtap="NavChange" data-cur="active">
+    <view class="{{PageCur==='active'?'cu-btn f-45 cuIcon-add bg-green shadow':''}}">
+      <text class="cuIcon-similar"></text>
+    </view>活动
+  </view>
+  
+  <view class="action {{PageCur==='my'?'text-green add-action':'text-gray'}}" bindtap="NavChange" data-cur="my">
+    <view class="{{PageCur==='my'?'cu-btn f-45 cuIcon-add bg-green shadow':''}}">
+      <text class="cuIcon-my"></text>
+    </view>我的
+  </view>
+</view>

@@ -1,0 +1,59 @@
+<scroll-view scroll-y class="scrollPage">
+  <!-- 登陆窗口 -->
+  <button class="UCenter-bg padding-40" bindtap="onGetUserInfo">
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/images/logo.png'}}" class="{{userInfo.avatarUrl?'png':''}}"
+      mode="widthFix"></image>
+    <view class="text-xl">{{userInfo.nickName?userInfo.nickName:'游客'}}
+    </view>
+    <view class="m-10">
+      <text>{{userInfo._id?'已登录':'未登录'}}</text>
+    </view>
+    <image src="{{my.gif}}" mode="scaleToFill" class="gif-wave"></image>
+  </button>
+
+  <!-- 数据窗口 -->
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> 最近浏览</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 我的收藏</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">{{forksCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-fork"></text> 沟通记录</view>
+    </view>
+  </view>
+  <!-- 宫格列表 -->
+  <view class="contain_box radius" wx:key="index" style="margin: 24rpx;">
+    <!-- 订单情况 -->
+    <view class="fun_box" wx:for="{{my.list}}" wx:key="index" bindtap="fun_box" data-myindex="{{index}}"
+      data-myname="{{item.name}}">
+      <text class="cuIcon-{{item.icon}} fun_box_icon" style="font-size:50rpx"></text>
+      <text class="txt_1">{{item.name}}</text>
+    </view>
+    <!-- 正在进行的订单的情况 -->
+    <view wx:if="{{isDoing}}" class="order">
+      <image src="/images/logo.png" class="order_img"></image>
+      <view class="info">
+        <view class="order_title">商家已接单</view>
+        <view class="order_info">预计家政人员<text class="time text-orange">20：39</text>到达</view>
+      </view>
+    </view>
+  </view>
+  <!-- 功能列表 -->
+  <view class="cu-list menu card-menu margin-top-sm margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow" wx:for="{{funcList}}" wx:key="index">
+      <navigator class="content" url="{{item.url}}" hover-class="none" style="line-height: 90rpx">
+        <text class="cuIcon-{{item.icon}} fun_box_icon text-green" style="font-size:42rpx"></text>
+        <text class="text-grey">{{item.content}}</text>
+      </navigator>
+    </view>
+    <view class="cu-tabbar-height"></view>
+    </view>
+</scroll-view>

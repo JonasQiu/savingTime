@@ -1,0 +1,106 @@
+{
+    "message": "获取成功",
+    "successCode": 200,
+    "code": 1,
+    "data": {
+        "id": 3,
+        "title": "保姆",
+        "banner": "\/storage\/page\/20201019\/be9e0fe549ca92ac7ffdcc027af3986b.jpg",
+        "detail_type": 1,
+        "detail_content": "<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"http:\/\/mxj.gdsytech.com\/storage\/page\/20210414\/dfd53b3baecf275768cf0c2ea1f22a3c.jpg\" alt=\"\" \/><\/p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"http:\/\/mxj.gdsytech.com\/storage\/page\/20210414\/40d0cad929869f460cc011c6b074c9b5.jpg\" alt=\"\" \/><\/p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"http:\/\/mxj.gdsytech.com\/storage\/page\/20210414\/29091c981d803fa1aed41ac148851c7b.jpg\" alt=\"\" \/><\/p>",
+        "resume_type": 3,
+        "info_type": 0,
+        "resume": [{
+            "id": 1061,
+            "avatar": "http:\/\/media.jiazhengye.cn\/08D52883-51CF-4BE0-AAEC-48155B1897A3_avatar",
+            "name": "马宝明",
+            "age": 48,
+            "experience": 6,
+            "city": "广东",
+            "type": ["白班阿姨", "煮饭、清洁"],
+            "collectCount": 1
+        }, {
+            "id": 1411,
+            "avatar": "http:\/\/media.jiazhengye.cn\/FufwBtgMAeCnDSsvDlcVsBNk0Xvj_avatar",
+            "name": "伍仕兰",
+            "age": 46,
+            "experience": 5,
+            "city": "湖北",
+            "type": ["育儿嫂", "月嫂", "育婴师", "小月龄保姆", "煮饭、清洁"],
+            "collectCount": 0
+        }, {
+            "id": 1123,
+            "avatar": "http:\/\/media.jiazhengye.cn\/CC168D04-6A8C-40BF-A99C-FEE2C63CD12B_avatar",
+            "name": "吴凤媚",
+            "age": 49,
+            "experience": 3,
+            "city": "广东",
+            "type": ["保姆", "小月龄保姆", "白班阿姨", "煮饭、清洁"],
+            "collectCount": 0
+        }, {
+            "id": 693,
+            "avatar": "http:\/\/media.jiazhengye.cn\/Fq2ZpY0tADJOE6Ay2qkdO6YSgkn__avatar",
+            "name": "周燕玲",
+            "age": 44,
+            "experience": 8,
+            "city": "广东",
+            "type": ["育儿嫂", "住家保姆", "煮饭、清洁"],
+            "collectCount": 0
+        }, {
+            "id": 653,
+            "avatar": "http:\/\/media.jiazhengye.cn\/DDD9255D-B58D-4A38-BA92-D59C6C2F2C87_avatar",
+            "name": "滕丽芳",
+            "age": 49,
+            "experience": 8,
+            "city": "广西",
+            "type": ["白班阿姨", "煮饭、清洁"],
+            "collectCount": 0
+        }, {
+            "id": 377,
+            "avatar": "http:\/\/media.jiazhengye.cn\/FiKGrJAQ8L49i8pD0Og84Ec-uAuG_avatar",
+            "name": "莫燕梅",
+            "age": 49,
+            "experience": 3,
+            "city": "广东",
+            "type": ["煮饭、清洁", "育儿嫂", "白班阿姨"],
+            "collectCount": 0
+        }, {
+            "id": 175,
+            "avatar": "http:\/\/media.jiazhengye.cn\/89A3FD0D-0DF0-48F4-BF8B-35AC8842FB73_avatar",
+            "name": "阮凤群",
+            "age": 43,
+            "experience": 5,
+            "city": "广东",
+            "type": ["保姆", "住家保姆", "小月龄保姆", "育婴师", "育儿嫂", "保洁"],
+            "collectCount": 0
+        }, {
+            "id": 130,
+            "avatar": "http:\/\/media.jiazhengye.cn\/FnyvsBo7IwIy1AFVy1JWK_if2vR5_avatar",
+            "name": "郭小红",
+            "age": 48,
+            "experience": 3,
+            "city": "广东",
+            "type": ["家政员", "保洁", "育儿嫂"],
+            "collectCount": 0
+        }, {
+            "id": 66,
+            "avatar": "http:\/\/media.jiazhengye.cn\/FoseE6SArh1xp3fSC1eoj7lopgje_avatar",
+            "name": "陈立霞",
+            "age": 55,
+            "experience": 3,
+            "city": "广西",
+            "type": ["老年护理", "住家保姆", "煮饭、清洁"],
+            "collectCount": 0
+        }, {
+            "id": 343,
+            "avatar": "http:\/\/media.jiazhengye.cn\/FvQzaM6l9Au5OWSQA4D68UpwZ2IE_avatar",
+            "name": "戴海燕",
+            "age": 44,
+            "experience": 3,
+            "city": "湖南",
+            "type": ["育儿嫂", "月嫂", "住家保姆"],
+            "collectCount": 0
+        }],
+        "column": []
+    }
+}

@@ -14,6 +14,6 @@
 
 <view class='cu-load load-modal animation-scale-up' wx:else>
 	<!-- <view class='cuIcon-emojifill text-orange'></view> -->
-	<image src='/image/logo.png' class='png' mode='aspectFit'></image>
+	<image src='/images/logo.png' class='png' mode='aspectFit'></image>
 	<view class='gray-text'>加载中...</view>
 </view>

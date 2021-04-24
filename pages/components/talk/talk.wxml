@@ -1,0 +1,51 @@
+<!-- 聊天框 -->
+<view class="chat-area" wx:if="{{askRoomName.length>0}}">
+  <view class="chat-title">{{roomObj.name}}</view>
+  <!-- 聊天记录展示 -->
+  <scroll-view scroll-y style="height:calc( 100vh - 120rpx - 390rpx);padding-bottom:50rpx" class="cu-chat"
+    scroll-top="{{scrollTop}}">
+    <!-- <view class="scrollTop"> -->
+    <block wx:for="{{msgList}}" wx:key="index">
+      <!-- 自己 -->
+      <view wx:if="{{item.userId==myUserInfo._id}}" class="cu-item self">
+        <view class="main">
+          <view class="content bg-green shadow">
+            <text wx:if="{{item.msgType==0}}">{{item.msgContent}}</text>
+            <image wx:elif="{{item.msgType==1}}" src="{{item.msgContent}}" bindtap="showImg"
+              data-imgurl="{{item.msgContent}}" class="radius" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="cu-avatar radius" style="background-image:url({{item.userAvatar}});"></view>
+        <view class="date">{{item.userName}} 发表于 {{item.showTime}}</view>
+      </view>
+      <!-- 对方 -->
+      <view class="cu-item" wx:else>
+        <view class="cu-avatar radius" style="background-image:url({{item.userAvatar}});"></view>
+        <view class="main">
+          <view class="content bg-gray shadow">
+            <text wx:if="{{item.msgType==0}}">{{item.msgContent}}</text>
+            <image wx:elif="{{item.msgType==1}}" src="{{item.msgContent}}" data-imgurl="{{item.msgContent}}"
+              bindtap="showImg" class="radius" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="date">{{item.userName}} 发表于 {{item.showTime}}</view>
+      </view>
+    </block>
+    <!-- </view> -->
+  </scroll-view>
+  <!-- 输入框发送 -->
+  <view class="cu-bar ask-foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+    <input class="solid-bottom bg-gray" style="border-radius:15rpx" bindfocus="InputFocus" bindinput="getInputValue"
+      bindblur="InputBlur" bindconfirm="sendUserMsg" adjust-position="{{false}}" value="{{inpValue}}" focus="{{false}}"
+      maxlength="300" cursor-spacing="10"></input>
+    <view class="action">
+      <text class="cuIcon-emojifill text-grey"></text>
+      <text class="cuIcon-picfill text-grey" bindtap="choosePhoto"></text>
+    </view>
+    <button class="cu-btn bg-green shadow" bindtap="sendMsg">发送</button>
+  </view>
+</view>
+<view wx:else style="position:absolute;top:48%;left:8%;font-size:40rpx;background-color:#fff;text-align:center;">
+  <view>请先登录</view>
+  <view>必须同时在同一频道下才可以聊天哦</view>
+</view>

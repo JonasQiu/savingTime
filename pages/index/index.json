@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "homePage": "/pages/components/homePage/homePage",
+    "my": "/pages/components/my/my",
+    "active": "/pages/components/active/active",
+    "search": "/pages/components/search/search"
+  }
 }

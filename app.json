@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/nav/nav"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,5 +14,10 @@
     "return": "/pages/components/return/return",
     "page-load": "/pages/components/pageLoad/pageLoad"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您当前位置，根据您的位置匹配提供当地的家政"
+    }
+  }
 }

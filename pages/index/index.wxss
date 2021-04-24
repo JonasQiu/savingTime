@@ -1,0 +1,8 @@
+/* search的样式 */
+.cuIcon-add:before {
+  content: "";
+}
+
+.cu-bar.tabbar .action.add-action [class*="cuIcon-"] {
+  line-height: 140rpx;
+}
