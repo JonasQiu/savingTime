@@ -17,7 +17,7 @@
   "sitemapLocation": "sitemap.json",
   "permission": {
     "scope.userLocation": {
-      "desc": "获取您当前位置，根据您的位置匹配提供当地的家政"
+      "desc": "获取您当前位置，根据您的位置匹配提供当地的家政！"
     }
   }
 }
